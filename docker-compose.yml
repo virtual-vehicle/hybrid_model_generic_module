@@ -1,0 +1,9 @@
+services:
+  app:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    container_name: hybrid-streamlit-app
+    ports:
+      - "8502:8501"
+    restart: unless-stopped
